@@ -24,7 +24,7 @@ class motd {
         default  => 'uname -snrvm > /var/run/motd && cat /etc/motd.tail >> /var/run/motd',
       }
     }
-    'Redhat': {
+    'RedHat': {
       $command = 'true'
     }
     default: {
